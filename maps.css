@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #B9EDDD;
+    --secundario: #87CBB9;
+    --terciario: #569DAA;
+    --ultimo:#577D86;
+    --gris: #CCCC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.menu {
+    background:var(--blanco);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position:fixed;
+    left: 0;
+    right:0;
+    top:0;
+    z-index: 999;
+    height: 85px;
+    width: 100vw;
+    display: flex;
+}
+
+input{
+    position: absolute;
+    width: 647px;
+    height: 125px;
+    left: 45px;
+    top: 20px;
+}
+
+.nav-list {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    margin-right: 30px;
+}
+
+    .nav-list li {
+        margin: 0 5px;
+    }
+
+    .nav-list li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        display: block;
+        color: var(--negro);
+    }
+
+    .nav-list li:hover, li.active {
+        background-color: var(--secundario);
+        font-weight: bold;
+        transition: .4s;
+    }
+
+.btn_menu {
+    margin-right: 30px;
+    color:var(--negro);
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top:65px
+}
+
+.titulo{
+    position: absolute;
+    width: 678px;
+    height: 44px;
+    left: calc(50% - 700px/2 - 380px);
+    top: 100px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.map{
+    position: absolute;
+    width: 109px;
+    height: 99px;
+    left: 650px;
+    top: 70px;
+}
+.img-petsmart {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.img-petsmart img{
+    height: 100px;
+    width: 150px;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.wave .mi-svg {
+    stroke: none;
+    fill: #B9EDDD;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.mapa{
+    box-sizing: border-box;
+    scale: 80%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+
+.titulo2{
+    position: absolute;
+    width: 678px;
+    height: 544px;
+    left: calc(50% - 700px/2 - 380px);
+    top: 800px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+}
+.mapa2{
+    scale: 80%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.mapa3{
+    scale: 80%;
+    margin-top: -505px;
+    margin-bottom: 50px;
+    margin-left: 750px;
+}
+
+

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #B9EDDD;
+    --secundario: #87CBB9;
+    --terciario: #569DAA;
+    --ultimo:#577D86;
+    --gris: #CCCC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.menu {
+    background:var(--blanco);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position:fixed;
+    left: 0;
+    right:0;
+    top:0;
+    z-index: 999;
+    height: 85px;
+    width: 100vw;
+    display: flex;
+}
+
+input{
+    position: absolute;
+    width: 647px;
+    height: 125px;
+    left: 45px;
+    top: 20px;
+}
+
+.titulo {
+    position: absolute;
+    width: 291px;
+    height: 98px;
+    left: 58px;
+    top: 216px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 49px;
+}
+.shadow-effect {
+    transition: box-shadow 0.3s; /* Transición suave para el efecto */
+    border-radius: 50%; /* Hace que la imagen tenga forma circular */
+  }
+
+  .shadow-effect:hover {
+    box-shadow: 0px 0px 8px 4px #B9EDDD; /* Efecto de sombra al pasar el puntero */
+  }
+
+  .card1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 380px;
+    height: 246px;
+    left: 390px;
+    top: 153px;
+}
+
+.card1 img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 200px;
+    top: 19px;
+}
+
+.card1 p {
+    position: absolute;
+    width: 685px;
+    height: 85px;
+    top: 107px;
+    left: 585px;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 60px;
+    display: flex;
+}
+
+.card1 .sub {
+    position: absolute;
+    width: 728px;
+    height: 400px;
+    left: 585px;
+    top: 253px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.img-petsmart {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.img-petsmart img {
+    height: 100px;
+    width: 150px;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.wave .mi-svg {
+    stroke: none;
+    fill: #B9EDDD;
+    height: 100%;
+    width: 100%;
+}
+
+    
+    @media (max-width: 768px) {
+        .titulo, .card1, .card1 img, .card1 p {
+          position: static;
+          width: auto;
+          height: auto;
+          top: auto;
+          left: auto;
+          text-align: center;
+        }
+    
+        .wave {
+            position: static;
+            width: auto;
+            height: auto;
+            top: auto;
+            left: auto;
+            text-align: center;
+            z-index: -1;
+             position: fixed;
+             right: 0%;
+             bottom: 0%;
+        }
+
+    .card1 .sub{
+      position: static;
+      width: auto;
+      height: auto;
+      top: auto;
+      text-align: left;
+      }
+    
+}
